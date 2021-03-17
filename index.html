@@ -1,67 +1,72 @@
-<!DOCTYPE HTML>
 <html>
-
-<head>
+    <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/css/default.css">
     <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/gallery.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/css/fonts.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <title>CipherOS</title>
 </head>
 
-<body>
-    <div id="navbar">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">Downloads</a>
-        <a href="#contact">Support</a>
-        <a href="#about">Team</a>
-    </div>
 
-    <div id="header">
-        <svg id="logo" height="70%" width="100%">
+
+<body>
+        <div class="navbar">
+            <a class = "active" href="">Home</a>
+            <a href="">Devices</a>
+            <a href="">Support</a>
+            <a href="">About</a>
+        </div>
+    <div class="header">
+
+        <svg id="logo" height="50%" width="100%">
             <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="transparent">CipherOS</text>
         </svg>
-        <h2><a href="#">
-                Developed By
-                <span class="typed2"></span></a>
-        </h2>
-        <div class="button"><a href="#">Devices</a></div>
-        <div class="button"><a href="#">Support</a></div>
+        <h2>Developed By <span class="typed2" style="color: #FFB03E;"></span></h2>
+        <div><button class="button">Devices</button><button class="button">Support</button></div>
     </div>
-    <h1> Features</h1>
-    <div class="gallery">
-        <a href="">
-            <div class="item"><img src="canvas/open.png">
-                <h1>Open Source</h1>
-                <h2>Don’t see a feature you want? Have experience with custom roms? Fork it from Github and make it our own!</h2>
-            </div>
+
+    <div class="features">
+        <a class="item">
+            <img src="canvas/open.png">
+            <h1>Open Source</h1>
+            <h2>Don’t see a feature you want? Have experience with custom roms? Fork it from Github and make it our own!</h2>
         </a>
-        <div class="item"><img src="canvas/updated.png">
+        <a class="item">
+            <img src="canvas/updated.png">
             <h1>Up to Date</h1>
             <h2>Constantly ensuring that the latest security patches provided by Google to insure your device is as secure as possible!</h2>
-        </div>
-        <div class="item"><img src="canvas/devices.png">
+        </a>
+        <a class="item">
+            <img src="canvas/devices.png">
             <h1>Device Support</h1>
-            <h2>We support a wide range of devices and always try to expandit even more. Like our recently released realme U1 build!</h2>
+            <h2>We support a wide range of devices and always try to expand it even more. Like our recently released realme U1 build!</h2>
+        </a>
+    </div>
+
+    <div class="footer">
+        <div class="download">
+            <div class="text">
+                <h2>What's holding you from downloading it?</h2>
+                <h1>Download it Now!</h1>
+            </div>
+            <img src="canvas/download.png" onclick="document.location=''">
+        </div>
+        <div class="carousel" id="screenshot">
+            <img class="carousel-item" src="canvas/ss/01.jpg">
+            <img class="carousel-item" src="canvas/ss/02.jpg">
+            <img class="carousel-item" src="canvas/ss/03.jpg">
+            <img class="carousel-item" src="canvas/ss/04.jpg">
+            <img class="carousel-item" src="canvas/ss/05.jpg">
+            <img class="carousel-item" src="canvas/ss/06.jpg">
+            <img class="carousel-item" src="canvas/ss/07.jpg">
+
         </div>
     </div>
-    <div id="download">
-        <a href="/Downloads"><img src="canvas/download.png"></a>
-        <h2>What's holding you from downloading it? </h2>
-        <h1>Download it Now!</h1>
-    </div>
-    <div class="carousel carousel-slider center">
-        <img src="/canvas/ss/01.png" class="carousel-item">
-        <img src="/canvas/ss/02.png" class="carousel-item">
-        <img src="/canvas/ss/03.png" class="carousel-item" >
-        <img src="/canvas/ss/04.png" class="carousel-item">
 
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script src="typed.js"></script>
     <script>
@@ -72,12 +77,15 @@
             loop: true
         });
     </script>
+
     <script>
         $(document).ready(function() {
-            $('.carousel').carousel({
-                
+            $('#screenshot').carousel({
+                numVisible: 7
             });
+            setInterval(function() {
+                $('#screenshot').carousel('next');
+            }, 2500);
         });
     </script>
-
 </body></html>

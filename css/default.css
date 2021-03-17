@@ -2,27 +2,32 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: 'JosefinSans';
-    background-color: #AFCBFD;
     color: white;
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-h1 {
-    font-size: 7vh;
-    padding: 0;
-    margin: 5vh 0 0 0;
+    font-family: JosefinSans;
+    background-color: #AFCBFD;
     cursor: default;
 }
 
+/* Header Starts */
+.header {
+    height: 90vh;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #202125;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
+.header h2 {
+    font-size: 4vh;
+    font-weight: 100;
+}
 
 #logo text {
+    cursor: default;
     font-size: 20vh;
     color: #202125;
     stroke-width: 2px;
@@ -30,71 +35,6 @@ h1 {
     stroke-dasharray: 800;
     stroke-dashoffset: 0;
     animation: animate 8s linear forwards infinite;
-
-}
-
-#header {
-    text-align: center;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    height: 90vh;
-    background-color: #202125;
-    border-style: hidden;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    cursor: default;
-}
-
-#header h2 {
-    font-size: 5vh;
-}
-
-#download {
-    background-color: #202125;
-    padding: 5vh 0 5vh 0;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    text-align: center;
-    margin: 0;
-}
-
-#download h1 {
-    margin: 3vh 0 0 0;
-}
-
-#download h2 {
-    font-size: 3vh;
-    padding: 0;
-    margin: 4vh 0vw 0vh 0vw;
-    cursor: default;
-}
-
-#download img {
-    position: absolute;
-    z-index: 1;
-    right: 15vw;
-    height: 18vh;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-#download img:hover {
-    transform: scale(1.2, 1.2);
-}
-
-.carousel {
-    background-color: #202125;
-    margin: 0;
-    padding: 0;
-    height: 50vh !important;
-}
-
-.carousel .carousel-item {
-    height: 50vh !important;
-    width: auto !important;
-}
-
-.typed2 {
-    color: #FFB03E;
 }
 
 .button {
@@ -120,7 +60,6 @@ h1 {
 }
 
 
-
 @keyframes animate {
     0% {
         stroke-dashoffset: 0;
@@ -135,25 +74,124 @@ h1 {
     }
 }
 
+/* Header Completed */
+
+/* Features Starts */
+.features {
+    margin: 5vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.features .item {
+    color: white;
+    padding: 2vh 2vw;
+    margin: 0 2vw;
+    background-color: #202125;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.features .item img {
+    width: 50%;
+}
+
+.features .item h1 {
+    font-size: 5vh;
+}
+
+.features .item h2 {
+    font-size: 2vh;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.features .item:hover {
+    transform: scale(1.05, 1.05)
+}
+
+/* Features Completed */
+
+/* Footer Starts */
+.footer {
+    background-color: #202125;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.download {
+    padding: 2vh 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.download img{
+    width: 20%;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.download img:hover{
+    transform: scale(1.1,1.1)
+}
+.download .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.download .text h1 {
+    margin: 0;
+    font-size: 7vh;
+}
+
+.download .text h2 {
+    font-size: 2vh;
+}
+
+#screenshot{
+    height: 60vh;
+}
+#screenshot img{
+   width: auto;
+    height: 90%;
+}
+
 @media screen and (max-width: 1024px) {
     #logo text {
-        font-size: 10vh;
+        font-size: 11vh;
     }
 
-    #header h2 {
-        font-size: 4vh;
+    .header h2 {
+        font-size: 3.5vh;
     }
 
-    #download h1,
-    #download h2 {
+    .features {
+        flex-direction: column;
+        margin: 5vh 2vw;
+    }
+
+    .features .item {
+        margin: 2vh 0;
+
+    }
+    .download .text {
         display: none;
-    }
-
-    #download img {
-        position: static;
-    }
-
-    .ss img {
-        height: 35vh;
     }
 }
