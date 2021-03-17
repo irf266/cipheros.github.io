@@ -1,0 +1,159 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'JosefinSans';
+    background-color: #AFCBFD;
+    color: white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 7vh;
+    padding: 0;
+    margin: 5vh 0 0 0;
+    cursor: default;
+}
+
+
+
+#logo text {
+    font-size: 20vh;
+    color: #202125;
+    stroke-width: 2px;
+    stroke: #AFCBFD;
+    stroke-dasharray: 800;
+    stroke-dashoffset: 0;
+    animation: animate 8s linear forwards infinite;
+
+}
+
+#header {
+    text-align: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 90vh;
+    background-color: #202125;
+    border-style: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: default;
+}
+
+#header h2 {
+    font-size: 5vh;
+}
+
+#download {
+    background-color: #202125;
+    padding: 5vh 0 5vh 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: center;
+    margin: 0;
+}
+
+#download h1 {
+    margin: 3vh 0 0 0;
+}
+
+#download h2 {
+    font-size: 3vh;
+    padding: 0;
+    margin: 4vh 0vw 0vh 0vw;
+    cursor: default;
+}
+
+#download img {
+    position: absolute;
+    z-index: 1;
+    right: 15vw;
+    height: 18vh;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#download img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.carousel {
+    background-color: #202125;
+    margin: 0;
+    padding: 0;
+    height: 50vh !important;
+}
+
+.carousel .carousel-item {
+    height: 50vh !important;
+    width: auto !important;
+}
+
+.typed2 {
+    color: #FFB03E;
+}
+
+.button {
+    margin: 1vh 1vw;
+    font-size: 2vh;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 20px;
+    border-width: 2;
+    border-style: solid;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:hover {
+    font-weight: bold;
+    color: #202125;
+    background-color: white;
+    transform: scale(1.2, 1.2);
+}
+
+
+
+@keyframes animate {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    40% {
+        stroke-dashoffset: 800;
+    }
+
+    100% {
+        stroke-dashoffset: 1600;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #logo text {
+        font-size: 10vh;
+    }
+
+    #header h2 {
+        font-size: 4vh;
+    }
+
+    #download h1,
+    #download h2 {
+        display: none;
+    }
+
+    #download img {
+        position: static;
+    }
+
+    .ss img {
+        height: 35vh;
+    }
+}
