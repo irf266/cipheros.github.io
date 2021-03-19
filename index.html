@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/css/default.css">
     <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/fonts.css" type="text/css" media="all" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -16,8 +17,8 @@
 <body>
         <div class="navbar">
             <a class = "active" href="">Home</a>
-            <a href="">Devices</a>
-            <a href="">Support</a>
+            <a href="/Devices/">Devices</a>
+            <a href="https://www.telegram.me/CipherOS_Chat">Support</a>
             <a href="">About</a>
         </div>
     <div class="header">
@@ -26,7 +27,7 @@
             <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="transparent">CipherOS</text>
         </svg>
         <h2>Developed By <span class="typed2" style="color: #FFB03E;"></span></h2>
-        <div><button class="button">Devices</button><button class="button">Support</button></div>
+        <div><button class="button" onclick="document.location='/Devices'">Devices</button><button class="button" onclick="document.location='https://www.telegram.me/CipherOS_Chat'">Support</button></div>
     </div>
 
     <div class="features">
@@ -53,7 +54,7 @@
                 <h2>What's holding you from downloading it?</h2>
                 <h1>Download it Now!</h1>
             </div>
-            <img src="canvas/download.png" onclick="document.location=''">
+            <img src="canvas/download.png" onclick="document.location='/Devices'">
         </div>
         <div class="carousel" id="screenshot">
             <img class="carousel-item" src="canvas/ss/01.jpg">
