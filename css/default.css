@@ -1,0 +1,11 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: #202125;
+    color: white;
+    font-family: "Prompt", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
