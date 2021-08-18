@@ -15,26 +15,45 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="navbar">
-            <div class="navbar-a">
-                <a><img src="img/logo.svg" class="logo"></a>
-                <img src="img/toggler.svg" id="toggler" onclick="expandNavbar()">
+    <div class="navbar">
+        <div class="navbar-a">
+            <a><img src="img/logo.svg" class="logo"></a>
+            <img src="img/toggler.svg" id="toggler" onclick="expandNavbar()">
+        </div>
+        <div class="navbar-b animateHidden">
+            <div class="navigate">
+                <a class="active">Home</a>
+                <a>Features</a>
+                <a>Downloads</a>
+                <a>Team</a>
             </div>
-            <div class="navbar-b animateHidden">
-                <div class="navigate">
-                    <a class="active">Home</a>
-                    <a>Features</a>
-                    <a>Downloads</a>
-                    <a>Team</a>
-                </div>
-                <div class="social">
-                    <a><img src="img/telegram.svg" class="logo" alt=""></a>
-                    <a><img src="img/twitter.svg" class="logo" alt=""></a>
-                </div>
+            <div class="social">
+                <a><img src="img/telegram.svg" class="logo" alt=""></a>
+                <a><img src="img/twitter.svg" class="logo" alt=""></a>
             </div>
         </div>
     </div>
+    <div class="header">
+        <div class="desc">CipherOS is a Android Custom OS, Based On AOSP & Fueled by Lineage, Striving to Provide its Users, A Clean, Bloat free & Sturdy Experience with Minimal Customisation !</div>
+
+
+        <div class="header-b">
+            <div style="margin-top: 5vh;"><button class="button" onclick="document.location='/Devices'">Devices</button>
+                <button class="button" onclick="document.location='https://www.telegram.me/CipherOS_Chat'">Support</button></div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173 234" width="173" height="234">
+                <style>
+                    tspan { white-space:pre }
+                    .shp0 { opacity: 0.251;stroke: #000000; fill:none; } 
+                    .shp1 { stroke: #000014;stroke-width: 2; fill:none; } 
+                </style>
+                <path id="Layer" class="shp0" d="M147.62 93.14L130.51 109.47C140.3 119.98 146.29 134.04 146.29 149.5C146.29 163.25 141.55 175.9 133.61 185.93L150.94 202.11C162.84 187.83 170 169.5 170 149.5C170 127.71 161.5 107.89 147.62 93.14Z" />
+                <path id="Layer" class="shp1" d="M40 44C40 19.7 61.04 0 87 0C112.96 0 134 19.7 134 44L134 88L110.5 88L110.5 44C110.5 31.85 99.98 22 87 22C74.02 22 63.5 31.85 63.5 44L63.5 88L40 88L40 44Z" />
+                <path id="Layer" class="shp1" d="M62.81 70.56C28.77 80.85 4 112.3 4 149.5C4 189.59 32.76 222.99 70.89 230.45C76.23 231.45 81.76 231.97 87.46 232C113 231.86 135.8 220.26 150.94 202.11L133.61 185.93C122.75 199.63 105.91 208.43 87 208.43C54.26 208.43 27.71 182.04 27.71 149.5C27.71 116.95 54.26 90.57 87 90.57C104.19 90.57 119.68 97.85 130.51 109.47L147.62 93.14C132.57 77.16 111.2 67.13 87.47 67C78.83 67.05 70.62 68.23 62.81 70.56Z" />
+        
+            </svg></div>
+    </div>
+
+
     <script>
         status = "closed";
 
