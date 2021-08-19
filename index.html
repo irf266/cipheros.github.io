@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
@@ -18,7 +19,7 @@
     <div class="navbar">
         <div class="navbar-a">
             <a><img src="img/logo.svg" class="logo"></a>
-            <img src="img/toggler.svg" id="toggler" onclick="expandNavbar()">
+            <img src="img/toggler.svg" id="toggler" style="border-width: 2px;border-color: rgba(255,255,255,0.5);border-radius: 10px;border-style: solid;margin: 5px 5px 0 0;" onclick="expandNavbar()">
         </div>
         <div class="navbar-b animateHidden">
             <div class="navigate">
@@ -52,8 +53,38 @@
         
             </svg></div>
     </div>
+    <div class="features">
+        <div class="features-item">
+            <img src="img/open_source.svg" data-aos="fade-right">
+            <div class="features-item-desc" data-aos="fade-left">
+                <h1>Open Source</h1>
+                <h2>Don’t see a feature you want? Have experience with custom roms? Fork it from Github and make it your own!</h2>
+            </div>
+        </div>
+        <div class="features-item">
+            <div class="features-item">
+                <img src="img/uptodate.svg" alt="" data-aos="fade-right">
+                <div class="features-item-desc" data-aos="fade-left">
+                    <h1>Up to Date</h1>
+                    <h2>Constantly merging the latest security patches provided by Google to insure your device is as secure as possible!</h2>
+                </div>
+            </div>
+        </div>
+        <div class="features-item">
+            <div class="features-item">
+                <img src="img/devicesupport.svg" alt="" data-aos="fade-right">
+                <div class="features-item-desc" data-aos="fade-left">
+                    <h1>Device Support</h1>
+                    <h2>We support a wide range of devices and always try to expand it even more!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         status = "closed";
 
