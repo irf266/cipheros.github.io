@@ -14,7 +14,7 @@
     font-weight: lighter;
 }
 
-.search {
+.main-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,6 +58,7 @@
 }
 
 .device {
+    user-select: none;
     cursor: pointer;
     border-radius: 5px;
     padding: 1vh 0;
@@ -67,7 +68,7 @@
 }
 
 .device-header {
-    font-size: 2vw;
+    font-size: 4vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -78,6 +79,20 @@
     width: 2vw;
 }
 
+.device-desc {
+    overflow: hidden;
+}
+
+.animateDevVisible {
+    max-height: 40vh;
+    transition: all 0.5s ease-in;
+}
+
+.animateDevHidden {
+    max-height: 0;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
 @media screen and (max-width:1024px) {
     .header {
         justify-content: flex-end;
@@ -85,5 +100,14 @@
     .header h1 {
         text-align: center;
         margin: 0 2vw 8vh 2vw;
+    }
+    #searchDevice {
+        font-size: 2vh;
+    }
+    .device-header {
+        font-size: 3vh;
+    }
+    .device-header img {
+        width: 8vw;
     }
 }

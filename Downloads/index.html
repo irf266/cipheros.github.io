@@ -38,31 +38,76 @@
     <div class="header">
         <h1>Download Cipher OS for your device!</h1>
     </div>
-    <div class="search">
+    <div class="main-content">
         <div class="searchbox">
             <img src="/img/search.svg">
-            <input type="text" id="searchDevice" placeholder="Search.." title="Enter your device name/code name">
+            <input type="text" id="searchDevice" onkeyup="search()" placeholder="Search.." title="Enter your device name/code name">
         </div>
         <div class="device-list">
+
             <div class="device">
-                <div class="device-header">
-                    <img src="/img/phone-logo.svg" alt="" srcset=""> RMX1831: realme U1
-                    <div style="margin-left: auto;margin-right: 2vw;font-size: 2vh;">↓</div>
-                </div>
-            </div>
-            <div class="device">
-                <div class="device-header">
+                <div class="device-header" status="closed" onclick="expandDevice(event)">
                     <img src="/img/phone-logo.svg" alt="" srcset=""> realme U1
-                    <div style="margin-left: auto;margin-right: 2vw;font-size: 2vh;">↓</div>
+                    <div style="margin-left: auto;margin-right: 2vw;">↓</div>
                 </div>
+                <div class="device-desc animateHidden">Realme U1 By Aakash</div>
+            </div>
+
+            <div class="device">
+                <div class="device-header" status="closed" onclick="expandDevice(event)">
+                    <img src="/img/phone-logo.svg" alt="" srcset=""> realme 1
+                    <div style="margin-left: auto;margin-right: 2vw;">↓</div>
+                </div>
+                <div class="device-desc animateHidden">Realme 1 By Ghost</div>
             </div>
         </div>
     </div>
 
 
 
+    <script>
+        function search() {
+            input = document.getElementById("searchDevice").value.toUpperCase();
+            devices = document.getElementsByClassName("device");
+            for (i = 0; i < devices.length; i++) {
+                if (devices[i].getElementsByClassName("device-header")[0].innerText.toUpperCase().indexOf(input) > -1) {
+                    devices[i].style.display = "";
+                } else {
+                    devices[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <script>
+        function expandDevice(e) {
+            /* Close all opened devices */
+            devices = document.getElementsByClassName("device");
+            for (i = 0; i < devices.length; i++) {
+                status = devices[i].getElementsByClassName("device-header")[0].getAttribute("status");
 
+                /* Skip the device if its the same which was triggered */
+                if (e.target != devices[i].getElementsByClassName("device-header")[0]) {
+                    if (status == "open") {
+                        devices[i].getElementsByClassName("device-header")[0].setAttribute("status", "closed");
+                        devices[i].getElementsByClassName("device-desc")[0].classList.remove("animateDevVisible");
+                        devices[i].getElementsByClassName("device-desc")[0].classList.add("animateDevHidden");
+                    }
+                }
+            }
+            /* Close or open the triggered device */
+            status = e.target.getAttribute("status");
+            if (status == "closed") {
+                e.target.setAttribute("status", "open");
+                e.target.parentElement.getElementsByClassName("device-desc")[0].classList.remove("animateDevHidden");
+                e.target.parentElement.getElementsByClassName("device-desc")[0].classList.add("animateDevVisible");
 
+            } else {
+                e.target.setAttribute("status", "closed");
+                e.target.parentElement.getElementsByClassName("device-desc")[0].classList.remove("animateDevVisible");
+                e.target.parentElement.getElementsByClassName("device-desc")[0].classList.add("animateDevHidden");
+            }
+        }
+    </script>
     <script>
         status = "closed";
 
@@ -72,7 +117,7 @@
                 document.getElementsByClassName("navbar-b")[0].classList.add("animateVisible");
                 status = "open";
             } else {
-                document.getElementsByClassName("navbar-b")[0].classList.remove("animateHidden");
+                document.getElementsByClassName("navbar-b")[0].classList.remove("animateVisible");
                 document.getElementsByClassName("navbar-b")[0].classList.add("animateHidden");
                 status = "closed";
             }
