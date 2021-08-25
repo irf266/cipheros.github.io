@@ -1,0 +1,29 @@
+Highlights & Device Specific Changes:
+Build type: STABLE
+Device: Realme 1 (CPH1859/CPH1861)
+Device maintainer: JAISHNAVPRASAD & Ghost
+Android Version: 11
+
+==== 2020-12-15 =====
+- Android R release
+- Initial OTA test for CipherOS
+- BETA 2 Release
+
+==== 2020-12-15 =====
+- January security patch
+- BETA release
+
+==== 2021-03-22 =====
+- March Security patch
+- CipherOS Crypto Release
+- Misc Fixes & Improvements
+
+==== 2021-05-18 =====
+- May security patch
+- Nuke treble app
+- Perfomance tweaks
+
+==== 2021-06-15 =====
+- Added RealmeParts
+- June security patch
+- Now comes with faceunlock

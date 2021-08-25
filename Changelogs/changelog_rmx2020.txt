@@ -1,0 +1,46 @@
+Highlights & Device Specific Changes:
+Build type: STABLE
+Device: Realme C3 (RMX2020)
+Device maintainer: Sarthak Roy
+Android Version: 11
+
+==== 2021-01-24 =====
+-VoWifi Support Added
+-Volte more Stable
+-Gcam Go added by default (thanks to techyminati)
+-GApps flashing fixed
+-Video Lag fixed
+-Screen Recording lag fixed
+-Video Crashing fixed
+-Battery capacity fixed
+-Audio issues fixed
+-And many more
+
+==== 2021-03-20 =====
+- Bump to CipherOS 1.5 CRYPTO
+- Misc Fixes & Improvements
+
+==== 2021-04-20 =====
+- April Security Patch
+- Source Side Changes
+- Misc Fixes & Improvements
+
+==== 2021-05-09 =====
+- May Security Patch
+- Enforcing + encrypted
+- Fixed Offline Charging animation
+- Address more Denials
+- Added Notch-killer overlay (Settings-> Display -> Cutout-> Notch-Killer)
+- More RAM optimization
+- Define rounded corners
+- Allow all apps to use smart replies 
+- Update GCam Go to v1.9 from Greatness
+- Source Side Changes
+- Misc Fixes & Improvements
+
+==== 2021-06-11 =====
+- June Security Patch
+- More RAM optimization
+- Define rounded corners
+- Enforcing+Encrypted
+

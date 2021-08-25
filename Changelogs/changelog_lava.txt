@@ -1,0 +1,10 @@
+Highlights & Device Specific Changes:
+Build type: STABLE
+Device: Lancelot & Shiva ( Lava) - Redmi 9/9 Prime & Poco M2
+Device maintainer: Box Boi
+Android Version: 11
+
+==== 2021-03-12 =====
+- OSS Build
+- Based Kernel Included
+- Ok Google Fixed

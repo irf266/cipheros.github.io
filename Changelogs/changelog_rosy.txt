@@ -1,0 +1,48 @@
+Highlights & Device Specific Changes:
+Build type: Stable
+Device: Redmi 5
+Device maintainer: Ebin
+Android Version: 11
+
+==== 2021-04-20 =====
+- Initial Official Build
+
+==== 2021-05-19 =====
+- May 2021 Security Patch.
+- Address some denials.
+- Fixed late network registration.
+- Disabled Blurs by default 
+- Many more performance improvements
+
+==== 2021-06-15 =====
+- June security patch 
+- fixed location + Hotspot turn off issue
+- Updated Audio, ADSP, DSP, Voice blobs from LA.UM.9.6.2.r1-03600-89xx.0
+- recompiled BSP's thermal-engine with correct thermal sensors for msm8953 k4.9 from LA.UM.9.6.2.r1-03600-89xx.0
+- Updated Audio HAL from LA.UM.9.6.2.r1-03600-89xx.0
+- Upstreamed Audio configs and xml to LA.UM.9.6.2.r1-03600-89xx.0
+- [TEST Change] Applied some mixer path changes from Daisy (devices share same audio card so why not)
+- Switched to Google's LMKD configuration and ditched CAF's kernel LMK driver
+- fixed memory management issues
+- fixed heating issues
+
+ ==== 2021-07-20 =====
+ - July security patch
+ - fixed DT2W not working on first boot
+ - faster boot time (Pixel boot enhancement + sched_boost + schedtune boost from Pixel's (crosshatch)) 
+ - Switched to libperf Power HAL
+ - Enhanced Scheduler settings from Pixel's
+ - Fixed mic not working in VoIP calls in last build
+ - Fixed CAF's broken mincpubw governor setting in post_boot script
+ - Increased zram size to 1.3GB
+ - Shortened wait time for services exit to optimize shutdown time
+ - fixed speaker on call when device screen turned off
+ - disabled {debug kernel, UFS, SCHED_CORE_CTL} configs
+ - Enabled and Upstreamed LZ4 module (upstream from ALS 5.4)
+ - thermal changes from Pixel 3XL
+ - BBR backports from @lmaoicon
+ - added sound control (requires root and kernel manager to access)
+ - fixed offline charging leds
+ - disabled DMA for i2c node
+ - imported missed out xiaomi audio changes (improved speaker audio quality)
+ - improved performance

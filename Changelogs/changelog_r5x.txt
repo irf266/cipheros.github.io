@@ -1,0 +1,26 @@
+Highlights & Device Specific Changes:
+Build type: STABLE
+Device: Realme 5 Series (r5x)
+Device maintainer: Naresh
+Android Version: 11
+
+==== 2021-06-15 =====
+- Updated to june Refin FP.
+- Enforcing.
+- Enabled pre rendering feature.
+- Added Realme Parts.
+
+
+==== 2021-07-11 =====
+- Added Kharame Dirac.
+- Switched to NaryTime kernel
+- Tuned Zram performance.
+- Disable Vsync for CPU rendered apps.
+- Enabled seamless transfer (headphone and speaker) in music notification.
+
+
+==== 2021-08-10 =====
+ - Fixed ScreenRecording Lag
+ - August Redfin FP.
+ - Disable NearbyMessagingService & DiscoveryService
+ - Add dex2oat config and enable dex2oat64 for performance

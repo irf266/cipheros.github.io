@@ -1,0 +1,43 @@
+Highlights & Device Specific Changes:
+Build type: STABLE
+Device: Xiaomi Mi CC9 Pro/Note 10
+Device maintainer: alibei
+Android Version: 11
+
+==== 2021-05-16 =====
+- Initial Official Build
+
+==== 2021-05-18 =====
+- Fixed offline charging
+- Fixed mic volume issues on some apps
+- Gestures are now working properly
+- Updated stock vendor blobs to 21.5.14
+
+==== 2021-06-11 =====
+- CipherOS 1.7 Astra
+- Kernel version: 4.14.236
+- Included firmware from 21.6.7
+- Updated a lot of caf blobs to 
+  LA.UM.9.1.r1-09600-SMxxx0.0
+- Updated stock vendor blobs to 21.6.7
+- Updated redfin fingerprint to June
+- Fixed mic quality issue in apps like
+  Google Duo, Jitsi Meet
+- Fixed memory leak in camera driver
+- Removed a lot of VLA usages in
+  the Kernel
+- Improved FOD speed and accuracy
+- Removed battery indicator LED
+  from Settings
+
+==== 2021-06-12 =====
+- Fixed CPU freq issue
+- Removed batterysecret logspam
+
+==== 2021-06-21 =====
+- Kernel version: 4.14.237
+- Better display colors (no yellow tint)
+- Improved battery life
+- Removed some debugging
+- Switched from schedtune to uclamp
+- Updated stock vendor blobs to 21.6.16

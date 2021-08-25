@@ -1,0 +1,11 @@
+Highlights & Device Specific Changes:
+Build type: STABLE
+Device: Realme 3/3i (RMX1821)
+Device maintainer: Eyad
+Android Version: 11
+
+==== 2021-03-17 =====
+- Security Patch 5th March 2021
+- March security patch [Sunfish fp]
+- Volte Working
+- CipherOS 1.5 CRYPTO - Initial Build

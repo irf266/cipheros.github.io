@@ -1,0 +1,9 @@
+Highlights & Device Specific Changes:
+Build type: STABLE
+Device: Redmi Go
+Device maintainer: TechyMinati
+Android Version: 11
+
+==== 2021-07-15 =====
+- Initial Build
+- July Security Patch

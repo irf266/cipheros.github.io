@@ -1,0 +1,8 @@
+Highlights & Device Specific Changes:
+Build type: BETA+1
+Device: Redmi Note 9 (merlin)
+Device maintainer: Box Boi
+Android Version: 11
+
+==== 2021-03-12 =====
+- Initial Official Build

@@ -1,0 +1,13 @@
+Highlights & Device Specific Changes:
+Build type: Stable
+Device: realme 7 / Narzo 20 Pro
+Device maintainer: Ksauraj
+Android Version: 11
+
+==== 2021-07-12 =====
+- July Security patch.
+- Improved app opening time.
+- Improved Network Speed indicators on Status bar.
+- Fixed blur.
+- Updated Redfin FP (July)
+- Improved overall stability of rom.

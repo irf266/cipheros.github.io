@@ -1,0 +1,16 @@
+Highlights & Device Specific Changes:
+Build type: Stable
+Device: Samsung J4 Prime
+Device maintainer: Nippon
+Android Version: 11
+
+==== 2021-04-21 =====
+- Initial Official Build
+
+==== 2021-06-11 =====
+- June Security Patch
+- June redfin fp props
+- Logcat after boot in /cache
+- MiuiCamera Bydefault
+- Via Browser Prebuilt
+- Some tweaks for ram management

@@ -58,8 +58,6 @@
 }
 
 .device {
-    user-select: none;
-    cursor: pointer;
     border-radius: 5px;
     padding: 1vh 0;
     margin: 2vh 5vw;
@@ -68,6 +66,7 @@
 }
 
 .device-header {
+    cursor: pointer;
     font-size: 4vh;
     display: flex;
     justify-content: flex-start;
@@ -80,17 +79,107 @@
 }
 
 .device-desc {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     overflow: hidden;
+}
+
+.device-desc h1 {
+    font-size: 3vh;
+    margin: 1vh 2vw;
+    font-weight: lighter;
+}
+
+.buttonbox {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 2vw;
+    border-style: dashed;
+    border-width: 2px 0 0 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    margin: 2vh 2vw 1vh 0;
+    font-family: "Prompt", sans-serif;
+    font-size: 2vh;
+    padding: 8px 20px;
+    border-radius: 50px;
+    border-width: 2;
+    border-style: solid;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:hover {
+    color: #6C63FF;
+    background-color: white;
+}
+
+.svg {
+    margin-right: 10px;
+    float: left;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.svg img {
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    height: 3vh;
+    width: auto;
+}
+
+.button:hover .svg {
+    background-color: #6C63FF;
 }
 
 .animateDevVisible {
     max-height: 40vh;
-    transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in-out;
 }
 
 .animateDevHidden {
     max-height: 0;
     transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.changelog {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(8px);
+    z-index: 99999;
+}
+
+.changelog iframe {
+    color: white;
+    text-align: center;
+    height: 50vh;
+    width: 30vw;
+}
+
+.changelog .close {
+    padding: 0;
+    cursor: pointer;
+    height: 10vh;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 @media screen and (max-width:1024px) {
@@ -109,5 +198,21 @@
     }
     .device-header img {
         width: 8vw;
+    }
+    .device-desc h1 {
+        font-size: 2.5vh;
+    }
+    .buttonbox {
+        flex-direction: column;
+    }
+    .button {
+        margin: 2vh 2vw 0vh 0;
+        font-size: 2vh;
+    }
+    .svg img {
+        height: 2vh;
+    }
+    .changelog iframe {
+        width: 100%;
     }
 }

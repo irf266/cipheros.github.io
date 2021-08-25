@@ -1,0 +1,17 @@
+** CipherOS 1.7 ASTRA **
+- Android Security Patch :
+ * 5th June 2021 
+
+- Settings :
+* Redesigned Settings Dasboard
+* Introducing realmeUI 2.0 Drawables in Settings Dashboard & About Phone
+* Introducing 4 tile QS like realmeUI 
+* Settings Tab Aligned from realmeUI 2.0
+* Synced About Phone Drawables from realmeUi 2.0
+
+-System:
+* Major UI Overhaul ( Settings, QS, About Phone )
+* Introducing Cipher Lab, Your One Stop Solution to Customisation ( Settings > Cipher Lab )
+* Added & Fixed Variety of Clocks 
+* Introducing New Device Info View
+* Introducing Faceunlock

@@ -1,0 +1,8 @@
+Highlights & Device Specific Changes:
+Build type: STABLE
+Device: Realme 6/6i/6s/Narzo (RMX2001)
+Device maintainer: UdayRocker
+Android Version: 11
+
+==== 2021-06-17 =====
+- Initial Official Build
