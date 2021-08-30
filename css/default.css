@@ -1,13 +1,36 @@
-html,
-body {
-    user-select: none;
-    padding: 0;
-    margin: 0;
-    background-color: #202125;
-    color: white;
-    font-family: "Prompt", sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
+    html,
+    body {
+        user-select: none;
+        padding: 0;
+        margin: 0;
+        background-color: #202125;
+        color: white;
+        font-family: "Prompt", sans-serif;
+        /*Works on FireFox*/
+        scrollbar-width: thin;
+        scrollbar-color: #202125 white;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+     ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background: #202125;
+    }
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    
+     ::-webkit-scrollbar-thumb:window-inactive {
+        background: rgba(20, 21, 25, 0.5);
+    }
+    
+    a {
+        text-decoration: none;
+    }
