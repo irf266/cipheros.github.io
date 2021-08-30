@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/default.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/downloads.css">
+
+    <!--Import Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!--Import Local CSSs-->
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/downloads.css">
     <title>Downloads | Cipher OS</title>
 </head>
 
@@ -230,32 +234,6 @@
             </div>
 
 
-            <div class="device">
-                <div class="device-header" status="closed" onclick="expandDevice(event)">
-                    <img src="/img/smartphone.svg" alt="" srcset=""> Samsung J4 Prime
-                    <div style="margin-left: auto;margin-right: 2vw;"></div>
-                </div>
-                <div class="device-desc animateDevHidden">
-                    <h1>Device<br> Codename<br> Maintainer<br>Version</h1>
-                    <h1 style="font-weight: bold;"> : <br> : <br> : <br> :</h1>
-                    <h1>Samsung J4 Prime <br>J4PRIMELTE <br> Nippon <br> 1.7 Astra</h1>
-                    <div class="buttonbox">
-                        <button class="button" onclick="document.location=''">
-                            <div class="svg" style="mask: url(/img/download.svg) no-repeat center / contain;-webkit-mask: url(/img/download.svg) no-repeat center / contain;">
-                                <img src="/img/download.svg">
-                            </div>
-                            Download
-                        </button>
-                        <button class="button" onclick="changelog('/Changelogs/changelog_j4primelte.txt')">
-                            <div class="svg" style="mask: url(/img/changelog.svg) no-repeat center / contain;-webkit-mask: url(/img/changelog.svg) no-repeat center / contain;">
-                                <img src="/img/changelog.svg">
-                            </div>
-                            Changelog
-                        </button>
-                    </div>
-                </div>
-            </div>
-
 
             <div class="device">
                 <div class="device-header" status="closed" onclick="expandDevice(event)">
@@ -470,13 +448,13 @@
     <div class="changelog">
         <img src="/img/close.svg" onclick="close_changelog()" class="close"><iframe id="changelog_frame" frameborder="0"></iframe>
     </div>
-    <script src="/javascript/changelog.js">
+    <script type="text/javascript" src="/javascript/changelog.js">
     </script>
-    <script src="/javascript/search.js">
+    <script type="text/javascript" src="/javascript/search.js">
     </script>
-    <script src="/javascript/expandAnimation.js">
+    <script type="text/javascript" src="/javascript/expandAnimation.js">
     </script>
-    <script src="/javascript/navbar.js">
+    <script type="text/javascript" src="/javascript/navbar.js">
     </script>
 </body>
 

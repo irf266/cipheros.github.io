@@ -103,13 +103,36 @@
 }
 
 .features-item-desc h1 {
+    font-size: 2em;
     color: #AFCBFD;
     text-transform: uppercase;
 }
 
 .features-item-desc h2 {
+    font-size: 1.5em;
     color: white;
     font-weight: lighter;
+}
+
+.carousel {
+    margin: 5vh 0;
+    height: calc((20/9)*15vw + 10vh);
+    padding-bottom: 10vh;
+}
+
+.carousel .carousel-item {
+    height: calc((20/9)*15vw);
+    width: 15vw;
+}
+
+.carousel .carousel-item img {
+    border-radius: 25px;
+    height: calc((20/9)*15vw);
+    width: 15vw;
+}
+
+.carousel .carousel-item .active img {
+    filter: none;
 }
 
 @keyframes fadeIn {
@@ -156,5 +179,16 @@
     .features-item-desc h2 {
         margin: 0 15px;
         text-align: center;
+    }
+    .carousel {
+        height: calc((20/9)*40vw + 10vh);
+    }
+    .carousel .carousel-item {
+        height: calc((20/9)*40vw);
+        width: 40vw;
+    }
+    .carousel .carousel-item img {
+        height: calc((20/9)*40vw);
+        width: 40vw;
     }
 }
