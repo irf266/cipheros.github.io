@@ -1,0 +1,41 @@
+.preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    backdrop-filter: blur(50px);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.preloader svg {
+    transform: perspective(500px);
+    width: 50%;
+    height: auto;
+}
+
+.preloader path {
+    fill: white;
+    stroke-width: 2px;
+    stroke: black;
+    opacity: 0.5;
+    stroke-dasharray: 20;
+    stroke-dashoffset: 200;
+    animation: loader 2s infinite alternate;
+}
+
+@keyframes loader {
+    to {
+        fill: transparent;
+        stroke-dashoffset: 0;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .preloader svg {
+        width: 90%;
+    }
+}
