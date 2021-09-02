@@ -38,3 +38,24 @@
     a {
         text-decoration: none;
     }
+    /*COPYRIGHT*/
+    
+    #copyright {
+        overflow: hidden;
+        margin-top: 5vh;
+        padding: 2em 1em;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        text-align: center;
+    }
+    
+    #copyright p {
+        letter-spacing: 1px;
+        font-size: 1.1em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    
+    #copyright a {
+        display: inline;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.8);
+    }
