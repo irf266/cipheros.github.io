@@ -1,0 +1,126 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    width: 100%;
+    height: 50vh;
+}
+
+.header h1 {
+    font-size: 5vh;
+    font-weight: lighter;
+}
+
+.gallery {
+    margin: 5vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery-item {
+    margin: 5vh 0;
+    padding: 2vh 2vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    background-color: white;
+    width: 25vw;
+    border-radius: 20px;
+}
+
+.dev-pic {
+    width: 10vw;
+    border-radius: 50%;
+}
+
+.github {
+    width: 10vw;
+    position: absolute;
+    display: none;
+}
+
+.github path {
+    stroke-width: 0.2;
+    stroke: black;
+    stroke-opacity: 1;
+    fill: transparent;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 0;
+    animation: github 2s infinite alternate;
+}
+
+@keyframes github {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    40% {
+        stroke-dashoffset: 1;
+    }
+    100% {
+        stroke-dashoffset: 2;
+    }
+}
+
+.gallery-desc {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-desc h1 {
+    margin-bottom: 0;
+    font-size: 4vh;
+    font-weight: lighter;
+}
+
+.gallery-desc h2 {
+    padding: 0 1vw;
+    margin-top: 0;
+    font-size: 2.5vh;
+    font-weight: lighter;
+}
+
+.gallery-item:hover {
+    cursor: pointer;
+}
+
+.gallery-item:hover .gallery-desc {
+    filter: blur(5px);
+}
+
+.gallery-item:hover .dev-pic {
+    filter: blur(5px);
+}
+
+.gallery-item:hover .github {
+    display: block;
+}
+
+@media screen and (max-width:1024px) {
+    .header {
+        justify-content: flex-end;
+        text-align: center;
+    }
+    .header h1 {
+        margin: 0 2vw 8vh 2vw;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    .gallery-item {
+        margin: 5vh 5vw;
+        width: auto;
+    }
+    .dev-pic {
+        width: 30vw;
+    }
+    .github {
+        width: 30vw;
+    }
+}
