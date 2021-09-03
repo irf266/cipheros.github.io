@@ -8,6 +8,6 @@ function changelog(url, height = "50vh") {
 
 function close_changelog() {
     document.getElementsByClassName("changelog")[0].style.display = "none";
-    document.getElementsByTagName("body")[0].style.overflow = "";
+    document.getElementsByTagName("body")[0].style.overflow = "visible";
 
 }
