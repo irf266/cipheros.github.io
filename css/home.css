@@ -105,8 +105,10 @@
 }
 
 .features-item-desc h1 {
+    font-family: inherit;
+    font-weight: 450;
     font-size: 2em;
-    color: #AFCBFD;
+    color: #3ea1db;
     text-transform: uppercase;
 }
 
