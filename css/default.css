@@ -45,13 +45,19 @@
         margin-top: 5vh;
         padding: 2em 1em;
         border-top: 1px solid rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.6);
+        letter-spacing: 1px;
         text-align: center;
     }
     
-    #copyright p {
-        letter-spacing: 1px;
-        font-size: 1.1em;
-        color: rgba(255, 255, 255, 0.6);
+    #copyright h1 {
+        margin: 2vh 0 0 0;
+        font-size: 2vh;
+    }
+    
+    #copyright h2 {
+        margin: 0;
+        font-size: 1.3vh;
     }
     
     #copyright a {
