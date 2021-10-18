@@ -2,7 +2,22 @@ Highlights & Device Specific Changes:
 Build type: STABLE
 Device: Realme C11 (RMX2185)
 Device maintainer: TechyMinati
-Android Version: 11
+Android Version: 12
+
+
+==== 2021-10-18 ====
+- Security Patch : 10th Oct 2021
+- CipherOS 2.0 - Based on Android 12.0
+- Based on android-12.0.0_r2
+- Cipher is AOSP Based Now.
+- Introduced Monet 
+- Added Three-finger Swipe to SS
+- Introducing Cipher Shades on Android 12.0
+- Added Back Kernel Header generator
+- Fixed Duplicated Baseband in About Phone
+- Added Android 12 Themed icons
+- Safetynet should pass by default
+- Redesigned Launcher
 
 ==== 2021-04-17 =====
 - Security Patch : 5th April 2021
