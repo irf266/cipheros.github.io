@@ -151,7 +151,7 @@
 @media screen and (max-width:1024px) {
     .desc {
         font-size: 3vh;
-        margin: 15vh 3vw 0 10vw;
+        margin: 15vh 10vw 0 10vw;
     }
     .header {
         flex-direction: column;
